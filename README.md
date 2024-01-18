@@ -13,15 +13,15 @@
 
 0. `firebase login`
 0.1 `allow firebase ... info?` - y
-1. `firebase init hosting` 
+1. `firebase init hosting` - all `y`
 2. `firebase init`
 3. `Are you ready to proceed?` - y
-4. Select Emulators and Functions
-5. Select project or create
-6. Select `Python`
+4. Select `Emulators` and `Functions`, and `Hosting Configure a clound function directory and its files`
+5. Select `Python`
+6. Select project or create
 7. `OverWrite?` - y
-8. `Do you want to install dependecies now?` - y
-9. All overwrite
+8. `Do you want to install dependecies now?` - n
+9. All overwrite and Enter or Y
 10. `pip install firebase-admin`
 11. cd functions/venv/Scripts
 12. `python.exe -m pip install --upgrade pip`
@@ -33,7 +33,7 @@
 
 ## Hello world
 
-UnComments in `main.py``
+*UnComments in `main.py``*
 
 `firebase emulators:start`
 
