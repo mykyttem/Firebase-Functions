@@ -22,14 +22,13 @@
 5. `cd functions` and `pip install -r requirements.txt`
 6. `cd ..` - move in main
 7. `firebase init hosting` - all **y** and **select project** (`git hub` - **no**)
-8. `firebase init functions` - **n**
+8. `firebase init functions` - **y** (`dependencies now - ?` - **n**)
 
 ## If you have Error
 `!!  functions: Failed to load function definition from source: Error: spawn "..." ENOENT`
 
 The first way:
-- 1. Move in `function` catalog - `cd ..` and `cd ..`  (or `cd functions`)
-- 2. `python -m pip install -r .\requirements.txt -t .\venv\Lib\site-packages\`
+- `python -m pip install -r .\functions\requirements.txt -t .\functions\venv\Lib\site-packages\`
 
 The second way:
 - 1. cd functions/venv/Scripts
