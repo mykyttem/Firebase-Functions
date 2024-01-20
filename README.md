@@ -8,35 +8,39 @@
 
 3. `npm install -g firebase-tools`
 
-
 ## Firebase
 
-0. `firebase login`
-0.1 `allow firebase ... info?` - y
-1. `firebase init hosting` - all `y`
-2. `firebase init`
-3. `Are you ready to proceed?` - y
-4. Select `Emulators` and `Functions`, and `Hosting Configure a clound function directory and its files`
-5. Select `Python`
-6. Select project or create
-7. `OverWrite?` - y
-8. `Do you want to install dependecies now?` - n
-9. All overwrite and Enter or Y
-10. `pip install firebase-admin`
-11. cd functions/venv/Scripts
-12. `python.exe -m pip install --upgrade pip`
-13. `cd ..` and `cd ..` for move in main `function` catalog
-14. `python -m pip install -r .\requirements.txt -t .\venv\Lib\site-packages\`
-15. `cd ..`
-16. `firebase init emulators`
-17. `firebase deploy`
+0. `firebase login` (allow firebase ... info? - **y**)
+1. `firebase init` (Are you ready to proceed? - **y**)
+2. Select and **Enter**: 
+ - `Emulators`
+ - `Functions`
+
+
+3. Select **Use an existing project** or **create** (you can create project on web site or in terminal)
+4. Select `Python` and all - **y**
+5. `cd functions` and `pip install -r requirements.txt`
+6. `cd ..` - move in main
+7. `firebase init hosting` - all **y** and **select project** (`git hub` - **no**)
+8. `firebase init functions` - **n**
+
+## If you have Error
+`!!  functions: Failed to load function definition from source: Error: spawn "..." ENOENT`
+
+The first way:
+- 1. Move in `function` catalog - `cd ..` and `cd ..`  (or `cd functions`)
+- 2. `python -m pip install -r .\requirements.txt -t .\venv\Lib\site-packages\`
+
+The second way:
+- 1. cd functions/venv/Scripts
+- 2. `python.exe -m pip install --upgrade pip`
 
 ## Hello world
 
-**UnComments in `main.py`**
+**UnComments code in `main.py`**
 
 `firebase emulators:start`
 
 your project name in `firebaserc`
 
-localhost:5001/<<Your project name (id)>>/us-central1/on_request_example
+localhost:5001/<Your project name (id)>/us-central1/on_request_example
