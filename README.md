@@ -17,12 +17,13 @@
  - `Functions`
 
 
-3. Select **Use an existing project** or **create** (you can create project on web site or in terminal)
+3. Select **Use an existing project** or **create**, and can **set up default project** (you can create project on web site or in terminal)
 4. Select `Python` and all - **y**
 5. `cd functions` and `pip install -r requirements.txt`
 6. `cd ..` - move in main
 7. `firebase init hosting` - all **y** and **select project** (`git hub` - **no**)
 8. `firebase init functions` - **y** (`dependencies now - ?` - **n**)
+9. `firebase init emulators` - **enter**
 
 ## If you have Error
 `!!  functions: Failed to load function definition from source: Error: spawn "..." ENOENT`
@@ -42,4 +43,4 @@ The second way:
 
 your project name in `firebaserc`
 
-localhost:5001/<Your project name (id)>/us-central1/on_request_example
+localhost:5001/<Your project name>/us-central1/on_request_example
