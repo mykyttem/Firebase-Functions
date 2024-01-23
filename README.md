@@ -43,4 +43,4 @@ The second way:
 
 your project name in `firebaserc`
 
-localhost:5001/<Your project name>/us-central1/on_request_example
+localhost:5001/project name/us-central1/on_request_example
